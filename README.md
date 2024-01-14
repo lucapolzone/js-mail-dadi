@@ -40,3 +40,14 @@ Se dobbiamo confrontare qualcosa che "cosa" ci serve?
   - Vado a verificare tutti gli account email presenti nell'array
     - *SE* la mail è presente: la mail risulta è registrata
     - *ALTRIMENTI* la mail non risulta registrata
+
+## Dadi
+
+- Richiamo l'elemento html "Bottone"
+- Richiamo l'elemento l'elemento html "Risultato partita"
+- Creo una funzione sul bottone
+  - Genero un numero randomico da 1 a 6 per il giocatore
+  - Genero un numero randomico da 1 a 6 per il computer
+  - *SE* il punteggio del giocatore è più alto vince
+  - *SE* il punteggio del giocatore è più basso perde
+  - *ALTRIMENTI* è un pareggio
