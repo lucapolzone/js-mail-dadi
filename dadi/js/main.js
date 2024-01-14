@@ -20,6 +20,6 @@ playButton.addEventListener("click", function() {
   } else if (playerScore < pcScore) {
     gameResult.innerText = `HAI PERSO! Il computer ha fatto ${pcScore}, tu hai fatto solo ${playerScore}`;
   } else {
-    gameResult.innerText = `PAREGGIO`;
+    gameResult.innerText = `PAREGGIO! Entrambi avete fatto ${playerScore}`;
   }
 });
