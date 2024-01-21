@@ -26,7 +26,6 @@ let mailFound = false;
       console.log("Mail trovata");
       feedback.innerText = `La tua mail risulta registrata`;
       mailFound = true;
-      break;
     } 
   }
   
