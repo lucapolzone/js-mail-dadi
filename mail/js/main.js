@@ -15,17 +15,24 @@ const feedback = document.getElementById("feedback");
 //il bottone verifica se la mail è registrata
 checkButton.addEventListener("click", function () {
   
-  // Input element
-  const mailUser = document.getElementById("mail-user").value;
+// Input element
+const mailUser = document.getElementById("mail-user").value;
+
+// Flag per verificare se la mail è stata trovata
+let mailFound = false;
 
   for (let i = 0; i < mailList.length; i++) {
     if (mailUser == mailList[i]) {
       console.log("Mail trovata");
       feedback.innerText = `La tua mail risulta registrata`;
+      mailFound = true;
       break;
-    } else {
-      console.log("Mail NON trovata");
-      feedback.innerText = `La tua mail NON risulta registrata`;
-    }
+    } 
   }
+  
+  if (!mailFound) {
+    console.log("Mail NON trovata");
+    feedback.innerText = `La tua mail NON risulta registrata`;  
+  }
+  
 });
